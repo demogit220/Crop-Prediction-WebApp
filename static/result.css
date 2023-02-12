@@ -1,0 +1,884 @@
+:root {
+  /* fonts */
+  --font-open-sans: "Open Sans";
+  --font-rajdhani: Rajdhani;
+  --font-space-mono: "Space Mono";
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-2xs: 0.75rem;
+  --font-size-xs: 0.88rem;
+  --font-size-sm: 1rem;
+  --font-size-base: 1.13rem;
+  --font-size-lg: 2.25rem;
+  --font-size-xl: 2.63rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-dimgray: #515365;
+  --color-lightslategray-100: #888da8;
+  --color-mediumseagreen: #10b981;
+  --color-aliceblue-100: #e6ecf5;
+  --color-lightsteelblue: #bfdbfe;
+  --color-slategray-100: #6b799a;
+  --color-slategray-200: #556f8e;
+
+  /* border radiuses */
+  --br-md: 9px;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+.breakpoint2xl,
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.breakpoint2xl {
+  background-color: #ecf6fa;
+  width: 100%;
+  height: 48rem;
+  overflow: hidden;
+}
+.group-child {
+  border-radius: 10px;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.p,
+.polygon-parent {
+  position: absolute;
+  top: 0.13rem;
+  left: 1.13rem;
+  display: inline-block;
+  width: 0.88rem;
+  height: 3rem;
+}
+.polygon-parent {
+  top: 1.5rem;
+  left: 3.69rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  display: none;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+.about-me,
+.home {
+  position: absolute;
+  top: 0;
+  letter-spacing: 0.06em;
+}
+.home {
+  left: 0;
+  color: var(--color-lightsteelblue);
+}
+.about-me {
+  left: 5.13rem;
+  color: #64748b;
+}
+.awards,
+.experience,
+.projects,
+.skills {
+  position: absolute;
+  top: 0;
+  left: 12.69rem;
+  letter-spacing: 0.06em;
+}
+.awards,
+.projects,
+.skills {
+  left: 21.44rem;
+}
+.awards,
+.projects {
+  left: 27.75rem;
+}
+.awards {
+  left: 35.31rem;
+}
+.div,
+.div1,
+.nav-menu {
+  position: absolute;
+  display: none;
+}
+.nav-menu {
+  top: 2.44rem;
+  left: 49.5rem;
+  width: 38.81rem;
+  height: 1.31rem;
+  font-size: var(--font-size-xs);
+  color: var(--color-slategray-100);
+}
+.div,
+.div1 {
+  top: 18.5rem;
+  left: 4.63rem;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.div1 {
+  top: 35.5rem;
+  left: 90.63rem;
+  transform: rotate(90deg);
+}
+.hello-world-i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--font-space-mono);
+}
+.a-web-dev,
+.prince-kumar-patel {
+  position: absolute;
+  top: 2.69rem;
+  left: 0;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.a-web-dev {
+  top: 6.63rem;
+  color: var(--color-lightsteelblue);
+}
+.im-always-ready {
+  position: absolute;
+  top: 11.06rem;
+  left: 0;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.06em;
+  color: #7997bc;
+  display: inline-block;
+  width: 49.63rem;
+}
+.learn-more-about {
+  position: absolute;
+  top: 18.5rem;
+  left: 0;
+  letter-spacing: 0.03em;
+  font-family: var(--font-space-mono);
+  color: #bae6fd;
+}
+.group-item {
+  position: absolute;
+  top: 19.38rem;
+  left: 12.63rem;
+  width: 2.25rem;
+  height: 0;
+}
+.hello-world-i-am-parent {
+  position: absolute;
+  top: 12.69rem;
+  left: 18rem;
+  width: 49.63rem;
+  height: 20rem;
+  display: none;
+  font-size: var(--font-size-sm);
+  color: #22d3ee;
+  font-family: var(--font-open-sans);
+}
+.image-6-icon {
+  position: absolute;
+  top: 0;
+  left: -8rem;
+  width: 120rem;
+  height: 25rem;
+  object-fit: cover;
+  display: none;
+}
+.g10-icon,
+.hero-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero-child {
+  background: linear-gradient(180.12deg, #059669, #10b981);
+  width: 100%;
+  height: 48rem;
+  mix-blend-mode: normal;
+}
+.g10-icon {
+  height: 203.25%;
+  /* width: 108.27%; */
+  right: -8.27%;
+  bottom: -103.25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.wrapper-child {
+  position: absolute;
+  top: 32.38rem;
+  left: 2.88rem;
+  border-top: 6px solid rgba(103, 232, 249, 0.2);
+  box-sizing: border-box;
+  width: 12.25rem;
+  height: 0.38rem;
+  display: none;
+}
+.group-inner {
+  position: absolute;
+  top: 0;
+  left: 0.06rem;
+  border-radius: var(--br-md);
+  background-color: var(--color-white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  width: 30.5rem;
+  height: 34.19rem;
+}
+.group-child1,
+.line-div {
+  position: absolute;
+  top: 3.59rem;
+  left: 0.03rem;
+  border-top: 1px solid var(--color-aliceblue-100);
+  box-sizing: border-box;
+  width: 30.56rem;
+  height: 0.06rem;
+}
+.group-child1 {
+  top: -0.03rem;
+  left: -0.03rem;
+}
+.crop-details {
+  position: absolute;
+  top: 1.06rem;
+  left: 2.06rem;
+}
+.line-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30.56rem;
+  height: 3.63rem;
+  font-size: var(--font-size-base);
+}
+.black-soil {
+  position: absolute;
+  top: 1.38rem;
+  left: 1.25rem;
+  font-weight: 500;
+}
+.rectangle-div {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  border-radius: var(--br-md);
+  border: 1px solid var(--color-aliceblue-100);
+  box-sizing: border-box;
+  width: 20.31rem;
+  height: 3rem;
+}
+.group-child2,
+.soil-type {
+  position: absolute;
+  width: 3.94rem;
+}
+.group-child2 {
+  top: 0;
+  left: 0.06rem;
+  background-color: var(--color-white);
+  height: 0.94rem;
+}
+.soil-type {
+  top: 0.06rem;
+  left: 0;
+  font-weight: 500;
+  display: inline-block;
+  height: 0.69rem;
+}
+.rectangle-group {
+  position: absolute;
+  top: 0;
+  left: 0.81rem;
+  width: 4rem;
+  height: 0.94rem;
+  font-size: var(--font-size-2xs);
+  color: var(--color-lightslategray-100);
+}
+.black-soil-parent {
+  position: absolute;
+  top: 10.06rem;
+  left: 1.88rem;
+  width: 20.31rem;
+  height: 3.5rem;
+}
+.div2 {
+  position: absolute;
+  top: 1.38rem;
+  left: 1.38rem;
+  font-weight: 500;
+}
+.group-child3 {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  border-radius: var(--br-md);
+  border: 1px solid var(--color-aliceblue-100);
+  box-sizing: border-box;
+  width: 7.5rem;
+  height: 3rem;
+}
+.group-child4 {
+  left: 0;
+  background-color: var(--color-white);
+  height: 0.94rem;
+}
+.group-child4,
+.phosphorus,
+.rectangle-container {
+  position: absolute;
+  top: 0;
+  width: 4.31rem;
+}
+.phosphorus {
+  left: 0;
+  font-weight: 500;
+  display: inline-block;
+  height: 0.69rem;
+}
+.rectangle-container {
+  left: 0.75rem;
+  height: 0.94rem;
+  font-size: var(--font-size-2xs);
+  color: var(--color-lightslategray-100);
+}
+.parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7.5rem;
+  height: 3.5rem;
+}
+.div3 {
+  top: 1.38rem;
+  left: 1.44rem;
+  font-weight: 500;
+}
+.div3,
+.div4,
+.group {
+  position: absolute;
+}
+.group {
+  top: 0;
+  left: 9.44rem;
+  width: 7.5rem;
+  height: 3.5rem;
+}
+.div4 {
+  top: 1.38rem;
+  left: 1.56rem;
+  font-weight: 500;
+}
+.container,
+.group-container {
+  position: absolute;
+  height: 3.5rem;
+}
+.container {
+  top: 0;
+  left: 19.31rem;
+  width: 7.5rem;
+}
+.group-container {
+  top: 4.88rem;
+  left: 1.88rem;
+  width: 26.81rem;
+}
+.div5 {
+  position: absolute;
+  top: 1.38rem;
+  left: 1.5rem;
+  font-weight: 500;
+}
+.group-child9 {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  border-radius: var(--br-md);
+  border: 1px solid var(--color-aliceblue-100);
+  box-sizing: border-box;
+  width: 6.06rem;
+  height: 3rem;
+}
+.group-child10 {
+  left: 0;
+  background-color: var(--color-white);
+  height: 0.94rem;
+}
+.crop-year,
+.group-child10,
+.rectangle-parent2 {
+  position: absolute;
+  top: 0;
+  width: 3.94rem;
+}
+.crop-year {
+  left: 0;
+  font-weight: 500;
+  display: inline-block;
+  height: 0.69rem;
+}
+.rectangle-parent2 {
+  left: 0.88rem;
+  height: 0.94rem;
+  font-size: var(--font-size-2xs);
+  color: var(--color-lightslategray-100);
+}
+.parent1 {
+  position: absolute;
+  top: 10rem;
+  left: 22.63rem;
+  width: 6.06rem;
+  height: 3.5rem;
+}
+.group-child11,
+.group-parent {
+  position: absolute;
+  width: 30.56rem;
+}
+.group-parent {
+  top: 14.88rem;
+  left: 0;
+  height: 13.56rem;
+}
+.group-child11 {
+  top: 2.59rem;
+  left: -0.03rem;
+  border-top: 1px solid var(--color-aliceblue-100);
+  box-sizing: border-box;
+  height: 0.06rem;
+}
+.location-info {
+  position: absolute;
+  top: 0;
+  left: 1.81rem;
+}
+.line-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30.5rem;
+  height: 2.63rem;
+  font-size: var(--font-size-base);
+}
+.madhya-pradesh {
+  position: absolute;
+  top: 1.31rem;
+  left: 1.69rem;
+  font-weight: 500;
+}
+.group-child12 {
+  position: absolute;
+  top: 0.44rem;
+  left: 0;
+  border-radius: var(--br-md);
+  border: 1px solid var(--color-aliceblue-100);
+  box-sizing: border-box;
+  width: 26.81rem;
+  height: 3rem;
+}
+.group-child13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 4.88rem;
+  height: 0.94rem;
+}
+.enter-state {
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 3.94rem;
+  height: 0.69rem;
+}
+.rectangle-parent3 {
+  position: absolute;
+  top: 0;
+  left: 1.19rem;
+  width: 4.88rem;
+  height: 0.94rem;
+  font-size: var(--font-size-2xs);
+  color: var(--color-lightslategray-100);
+}
+.madhya-pradesh-parent {
+  position: absolute;
+  top: 3.88rem;
+  left: 1.81rem;
+  width: 26.81rem;
+  height: 3.44rem;
+}
+.indore {
+  position: absolute;
+  top: 1rem;
+  left: 1.69rem;
+  font-weight: 500;
+}
+.group-child15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 6.13rem;
+  height: 0.94rem;
+}
+.enter-district {
+  position: absolute;
+  top: 0;
+  left: 0.19rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 5.31rem;
+  height: 0.69rem;
+}
+.rectangle-parent4 {
+  position: absolute;
+  top: 0;
+  left: 1.19rem;
+  width: 6.13rem;
+  height: 0.94rem;
+  font-size: var(--font-size-2xs);
+  color: var(--color-lightslategray-100);
+}
+.group-parent1,
+.indore-parent {
+  position: absolute;
+  top: 8.56rem;
+  left: 1.81rem;
+  width: 26.81rem;
+  height: 3.44rem;
+}
+.group-parent1 {
+  top: 1.31rem;
+  left: 0.06rem;
+  width: 30.5rem;
+  height: 12rem;
+}
+.group-child16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: #14b8a6;
+  width: 26.81rem;
+  height: 3.25rem;
+}
+.predict-crop {
+  position: absolute;
+  top: 0.88rem;
+  left: 4.19rem;
+  display: inline-block;
+  width: 18.44rem;
+  height: 1.44rem;
+}
+.rectangle-parent5 {
+  position: absolute;
+  top: 29.75rem;
+  left: 1.88rem;
+  width: 26.81rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  color: var(--color-white);
+}
+.rectangle-parent {
+  position: absolute;
+  top: 9.63rem;
+  left: 17.75rem;
+  width: 30.56rem;
+  height: 34.19rem;
+  display: none;
+}
+.icons8-natural-food-64-1 {
+  position: absolute;
+  top: 0;
+  left: 0.75rem;
+  width: 6.19rem;
+  height: 6.19rem;
+  object-fit: cover;
+}
+.group-child17 {
+  top: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  width: 33.13rem;
+  height: 31.69rem;
+}
+.group-child17,
+.inr,
+.price {
+  position: absolute;
+  left: 0;
+}
+.inr {
+  top: 1.25rem;
+}
+.price {
+  top: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-lightslategray-100);
+}
+.inr-parent {
+  position: absolute;
+  top: 2.19rem;
+  left: 3.13rem;
+  width: 13.380000000000003rem;
+  height: 4.63rem;
+}
+.b,
+.parent2 {
+  position: absolute;
+  top: 1.25rem;
+  left: 0.06rem;
+}
+.parent2 {
+  top: 8rem;
+  left: 3.06rem;
+  width: 6.06rem;
+  height: 4.63rem;
+}
+.indore-madhya-pradesh {
+  position: absolute;
+  top: 1.63rem;
+  left: 0.88rem;
+}
+.location {
+  position: absolute;
+  top: 0;
+  left: 0.94rem;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-lightslategray-100);
+}
+.black-soil1 {
+  position: absolute;
+  top: 1.63rem;
+  left: 0.06rem;
+}
+.black-soil-group {
+  position: absolute;
+  top: 4.88rem;
+  left: 0.88rem;
+  width: 9rem;
+  height: 4.5rem;
+}
+.b1,
+.phosphorus1 {
+  position: absolute;
+  display: inline-block;
+}
+.b1 {
+  top: 1.25rem;
+  left: 0;
+  width: 7.15rem;
+}
+.phosphorus1 {
+  top: 0;
+  left: 0.09rem;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-lightslategray-100);
+  width: 7.67rem;
+}
+.b2,
+.parent3 {
+  position: absolute;
+  left: 0;
+}
+.parent3 {
+  top: 0;
+  width: 7.76rem;
+  height: 4.13rem;
+}
+.b2 {
+  top: 1.25rem;
+  display: inline-block;
+  width: 6.98rem;
+}
+.nitrogen1,
+.parent4 {
+  position: absolute;
+  top: 0;
+}
+.nitrogen1 {
+  left: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-lightslategray-100);
+  display: inline-block;
+  width: 5.51rem;
+}
+.parent4 {
+  left: 10.51rem;
+  width: 6.98rem;
+  height: 4.13rem;
+}
+.b3,
+.sulphur1 {
+  position: absolute;
+  display: inline-block;
+}
+.b3 {
+  top: 1.25rem;
+  left: 0.34rem;
+  width: 5.95rem;
+}
+.sulphur1 {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-lightslategray-100);
+  width: 5.26rem;
+}
+.group-parent3,
+.parent5 {
+  position: absolute;
+  height: 4.13rem;
+}
+.parent5 {
+  top: 0;
+  left: 20.34rem;
+  width: 6.29rem;
+}
+.group-parent3 {
+  top: 11.19rem;
+  left: 0;
+  width: 26.63rem;
+}
+.indore-madhya-pradesh-parent {
+  position: absolute;
+  top: 13.19rem;
+  left: 2.19rem;
+  width: 26.63rem;
+  height: 15.31rem;
+  font-size: var(--font-size-lg);
+  color: var(--color-dimgray);
+}
+.rectangle-parent6 {
+  position: absolute;
+  top: 5.44rem;
+  left: 0;
+  width: 33.13rem;
+  height: 31.69rem;
+}
+.group-child18,
+.image-7-icon {
+  position: absolute;
+  border-radius: var(--br-md);
+}
+.image-7-icon {
+  top: -1.87rem;
+  left: 2.44rem;
+  height: 13.69rem;
+  /* object-fit: cover; */
+  -webkit-box-shadow: -10px 17px 73px -24px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -10px 17px 73px -24px rgba(0, 0, 0, 0.6);
+  box-shadow: -10px 17px 73px -24px rgba(0, 0, 0, 0.6);
+}
+.group-child18 {
+  /* top: 0; */
+  /* left: 0; */
+  /* background-color: var(--color-white); */
+  /* width: 11rem; */
+  /* height: 4.44rem; */
+}
+.wheet {
+  position: absolute;
+  top: 0;
+  left: 2.44rem;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 9px;
+  display: inherit;
+}
+.rectangle-parent7 {
+  position: absolute;
+  top: 9.25rem;
+  left: 0;
+  width: 23rem;
+  height: 4.44rem;
+}
+.image-7-parent {
+  position: absolute;
+  top: 2rem;
+  left: 15.44rem;
+  width: 19.38rem;
+  height: 13.69rem;
+  font-size: var(--font-size-lg);
+  color: var(--color-dimgray);
+}
+.c {
+  top: 0;
+  left: 0;
+}
+.c,
+.c-parent,
+.o {
+  position: absolute;
+}
+.o {
+  top: 0.56rem;
+  left: 3.5rem;
+  font-size: var(--font-size-2xs);
+}
+.c-parent {
+  top: 0;
+  left: 9.63rem;
+  width: 5.88rem;
+  height: 3.94rem;
+  font-size: 2.88rem;
+  color: var(--color-white);
+  font-family: var(--font-open-sans);
+}
+.group-parent2 {
+  position: absolute;
+  top: 2.25rem;
+  left: 0;
+  width: 34.81rem;
+  height: 37.13rem;
+}
+.icons8-natural-food-64-1-parent {
+  position: absolute;
+  top: 4.31rem;
+  left: 17.69rem;
+  width: 34.81rem;
+  height: 39.38rem;
+  font-size: var(--font-size-xl);
+  color: var(--color-mediumseagreen);
+}
+.hero,
+.wrapper {
+  height: 48rem;
+  overflow: hidden;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 14.88rem;
+  width: 66.19rem;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray);
+  font-family: var(--font-rajdhani);
+}
+.hero {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-size: var(--font-size-2xs);
+  color: var(--color-slategray-200);
+  font-family: var(--font-space-mono);
+}

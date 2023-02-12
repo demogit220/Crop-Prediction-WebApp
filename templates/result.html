@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='result.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space Mono:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap"
+    />
+    <title>Predictor Result</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="breakpoint2xl"></div>
+      <div class="polygon-parent">
+        <img
+          class="group-child"
+          alt=""
+          src="{{ url_for('static', filename='polygon-1.svg') }}"
+        /><b class="p">P</b>
+      </div>
+
+      <img
+        class="image-6-icon"
+        alt=""
+        src="{{ url_for('static', filename='image-6@2x.png') }}"
+      />
+      <div class="hero-child"></div>
+      <img
+        class="g10-icon"
+        alt=""
+        src="{{ url_for('static', filename='g10.svg') }}"
+      />
+      <div class="wrapper">
+        <div class="wrapper-child"></div>
+        <div class="rectangle-parent">
+          <div class="group-inner"></div>
+          <div class="group-parent">
+            <div class="line-parent">
+              <div class="line-div"></div>
+              <div class="group-child1"></div>
+              <b class="crop-details">Crop Details</b>
+            </div>
+            <div class="black-soil-parent">
+              <div class="black-soil">{{ result['soil'] }}</div>
+              <div class="rectangle-div"></div>
+              <div class="rectangle-group">
+                <div class="group-child2"></div>
+                <div class="soil-type">SOIL TYPE</div>
+              </div>
+            </div>
+            <div class="group-container">
+              <div class="parent">
+                <div class="div2">{{ result['p'] }}</div>
+                <div class="group-child3"></div>
+                <div class="rectangle-container">
+                  <div class="group-child4"></div>
+                  <div class="phosphorus">PHOSPHORUS</div>
+                </div>
+              </div>
+              <div class="group">
+                <div class="div3">{{ result['n'] }}</div>
+                <div class="group-child3"></div>
+                <div class="rectangle-container">
+                  <div class="group-child4"></div>
+                  <div class="phosphorus">NITROGEN</div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="div4">{{ result['k'] }}</div>
+                <div class="group-child3"></div>
+                <div class="rectangle-container">
+                  <div class="group-child4"></div>
+                  <div class="phosphorus">POTASSIUM</div>
+                </div>
+              </div>
+            </div>
+            <div class="parent1">
+              <div class="div5">{{result['year']}}</div>
+              <div class="group-child9"></div>
+              <div class="rectangle-parent2">
+                <div class="group-child10"></div>
+                <div class="crop-year">CROP YEAR</div>
+              </div>
+            </div>
+          </div>
+          <div class="group-parent1">
+            <div class="line-group">
+              <div class="group-child11"></div>
+              <b class="location-info">Location info</b>
+            </div>
+            <div class="madhya-pradesh-parent">
+              <div class="madhya-pradesh">{{result['state']}}</div>
+              <div class="group-child12"></div>
+              <div class="rectangle-parent3">
+                <div class="group-child13"></div>
+                <div class="enter-state">ENTER STATE</div>
+              </div>
+            </div>
+            <div class="indore-parent">
+              <div class="indore">{{result['district']}}</div>
+              <div class="group-child12"></div>
+              <div class="rectangle-parent4">
+                <div class="group-child15"></div>
+                <div class="enter-district">ENTER DISTRICT</div>
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-parent5">
+            <div class="group-child16"></div>
+            <b class="predict-crop">Predict Crop</b>
+          </div>
+        </div>
+        <div class="icons8-natural-food-64-1-parent">
+          <img
+            class="icons8-natural-food-64-1"
+            alt=""
+            src="{{ url_for('static', filename='icons8naturalfood64-1@2x.png') }}"
+          />
+          <div class="group-parent2">
+            <div class="rectangle-parent6">
+              <div class="group-child17"></div>
+              <div class="inr-parent">
+                <b class="inr">{{result['price']}} INR</b>
+                <div class="price">PRICE</div>
+              </div>
+              <div class="parent2">
+                <b class="b">{{result['rainfall']}}</b>
+                <div class="price">RAINFALL</div>
+              </div>
+              <div class="indore-madhya-pradesh-parent">
+                <b class="indore-madhya-pradesh"
+                  >{{result['district']}}, {{result['state']}}</b
+                >
+                <div class="location">LOCATION</div>
+                <div class="black-soil-group">
+                  <b class="black-soil1">{{result['soil']}}</b>
+                  <div class="price">SOIL TYPE</div>
+                </div>
+                <div class="group-parent3">
+                  <div class="parent3">
+                    <b class="b1">{{result['p']}}</b>
+                    <div class="phosphorus1">PHOSPHORUS</div>
+                  </div>
+                  <div class="parent4">
+                    <b class="b2">{{result['n']}}</b>
+                    <div class="nitrogen1">NITROGEN</div>
+                  </div>
+                  <div class="parent5">
+                    <b class="b3">{{result['k']}}</b>
+                    <div class="sulphur1">POTASSIUM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="image-7-parent">
+              <img
+                class="image-7-icon"
+                alt=""
+                src="{{ url_for('static', filename=result['crop']+'.jpg') }}"
+              />
+              <div class="rectangle-parent7">
+                <b class="wheet">{{result['crop']}}</b>
+              </div>
+            </div>
+            <div class="c-parent">
+              <div class="c">{{result['temp']}} C</div>
+              <div class="o">O</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
